@@ -1,0 +1,12 @@
+[package]
+name = "helveta-rust"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "helveta"
+crate-type = ["cdylib"]
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["consoleapi", "libloaderapi"] }
+lazy_static = "1.4.0"
